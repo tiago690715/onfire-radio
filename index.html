@@ -1,83 +1,69 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OnFire Radio</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: 'Arial', sans-serif;
       background: linear-gradient(135deg, #2b0000, #4a0000, #7a0000);
       color: #ffecec;
+      text-align: center;
     }
     header {
-      padding: 30px;
-      text-align: center;
-      background: rgba(0, 0, 0, 0.4);
+      padding: 40px 20px;
     }
-    header h1 {
+    header img {
+      max-width: 180px;
+      margin-bottom: 20px;
+    }
+    h1 {
       margin: 0;
-      font-size: 2.5em;
+      font-size: 3em;
+      color: #ff3b1f;
     }
-    header p {
-      margin-top: 10px;
-      font-size: 1.1em;
+    p {
+      font-size: 1.2em;
       opacity: 0.9;
     }
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 30px 20px;
-    }
     .player {
-      background: rgba(255, 255, 255, 0.1);
+      background: rgba(0,0,0,0.4);
+      margin: 30px auto;
       padding: 25px;
-      border-radius: 12px;
-      text-align: center;
-      margin-bottom: 40px;
+      border-radius: 15px;
+      max-width: 600px;
     }
     .player h2 {
-      margin-bottom: 15px;
+      color: #ff3b1f;
     }
     audio {
       width: 100%;
       margin-top: 15px;
     }
-    .sections {
+    .cards {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
     .card {
-      background: rgba(255, 255, 255, 0.1);
+      background: rgba(0,0,0,0.35);
       padding: 20px;
-      border-radius: 12px;
-    }
-    .card h3 {
-      margin-top: 0;
-    }
-    .program {
-      margin-bottom: 10px;
-      padding-bottom: 10px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    }
-    .program:last-child {
-      border-bottom: none;
+      border-radius: 15px;
     }
     footer {
-      text-align: center;
+      margin-top: 40px;
       padding: 20px;
-      background: rgba(0, 0, 0, 0.4);
       font-size: 0.9em;
-      opacity: 0.8;
+      background: rgba(0,0,0,0.5);
     }
     a {
       color: #ff3b1f;
       text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
     }
   </style>
 </head>
@@ -85,69 +71,39 @@
 
   <header>
     <h1>🔥 OnFire Radio</h1>
-    <p>La radio que está encendida 24/7 🔥</p>
+    <p>La radio que está encendida 24/7</p>
   </header>
 
-  <div class="container">
+  <section class="player">
+    <h2>🔴 Próximamente en vivo</h2>
+    <p>Estamos preparando el fuego 🔥 muy pronto al aire</p>
+    <audio controls disabled>
+      <source src="#" type="audio/mpeg">
+      Tu navegador no soporta audio.
+    </audio>
+  </section>
 
-    <section class="player">
-      <h2>🔴 Próximamente en Vivo</h2>
-      <p>Estamos calentando motores 🔥 muy pronto podrás escucharnos en directo.</p>
-      <audio controls disabled>
-        <source src="#" type="audio/mpeg">
-        Tu navegador no soporta audio.
-      </audio>
-    </section>
-
-    <section class="sections">
-
-      <div class="card">
-        <h3>📻 Programación</h3>
-        <div class="program">
-          <strong>OnFire Morning</strong><br>
-          <small>Lunes a Viernes - 08:00</small>
-        </div>
-        <div class="program">
-          <strong>OnFire DJ Set</strong><br>
-          <small>Viernes - 21:00</small>
-        </div>
-        <div class="program">
-          <strong>OnFire Top</strong><br>
-          <small>Sábados - 18:00</small>
-        </div>
-      </div>
-
-      <div class="card">
-        <h3>🎶 Playlists</h3>
-        <p>Escucha nuestras playlists especiales:</p>
-        <ul>
-          <li><a href="#">Perreo Full</a></li>
-          <li><a href="#">Hits del Momento</a></li>
-          <li><a href="#">Clásicos Urbanos</a></li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>🎙️ Podcasts</h3>
-        <p>Revive nuestros programas:</p>
-        <ul>
-          <li><a href="#">Entrevistas</a></li>
-          <li><a href="#">Sesiones DJ</a></li>
-          <li><a href="#">Especiales</a></li>
-        </ul>
-      </div>
-
-    </section>
-
-  </div>
+  <section class="cards">
+    <div class="card">
+      <h3>📻 Programas</h3>
+      <p>OnFire Morning<br>OnFire DJ Set<br>OnFire Top</p>
+    </div>
+    <div class="card">
+      <h3>🎙️ Podcasts</h3>
+      <p>Entrevistas, sesiones DJ y especiales</p>
+    </div>
+    <div class="card">
+      <h3>📱 Redes</h3>
+      <p>
+        <a href="#">Instagram</a><br>
+        <a href="#">TikTok</a><br>
+        <a href="#">YouTube</a>
+      </p>
+    </div>
+  </section>
 
   <footer>
-    <p>© 2025 Mi Radio Online | Síguenos en redes</p>
-    <p>
-      <a href="#">Instagram</a> ·
-      <a href="#">TikTok</a> ·
-      <a href="#">YouTube</a>
-    </p>
+    © 2025 OnFire Radio - Todos los derechos reservados
   </footer>
 
 </body>
