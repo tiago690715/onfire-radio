@@ -1165,3 +1165,133 @@ REDES SOCIALES
     background:#25D366;
 
 }
+/*=========================================
+RESPONSIVE - TABLETS
+=========================================*/
+
+@media (max-width: 992px){
+
+    .container{
+        width:95%;
+    }
+
+    .hero-container{
+        flex-direction:column;
+        text-align:center;
+        gap:50px;
+    }
+
+    .hero-left{
+        width:100%;
+    }
+
+    .hero-right{
+        width:100%;
+    }
+
+    .hero-right img{
+        max-width:350px;
+        width:100%;
+    }
+
+    .hero-stats{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .live-container{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .live-image img{
+        width:100%;
+        max-width:400px;
+    }
+
+}
+/*=========================================
+RESPONSIVE - CELULARES
+=========================================*/
+
+@media (max-width:768px){
+
+    .navbar{
+        display:none;
+    }
+
+    .hero h1{
+        font-size:40px;
+        line-height:50px;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .btn-red,
+    .btn-outline{
+
+        width:100%;
+        justify-content:center;
+
+    }
+
+    .hero-stats{
+
+        display:grid;
+        grid-template-columns:1fr;
+        gap:20px;
+
+    }
+
+    .schedule-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .news-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+/*=========================================
+RESPONSIVE - TELÉFONOS PEQUEÑOS
+=========================================*/
+
+@media (max-width:480px){
+
+    .hero{
+
+        padding:120px 20px 60px;
+
+    }
+
+    .hero h1{
+
+        font-size:32px;
+        line-height:42px;
+
+    }
+
+    .section-title h2{
+
+        font-size:30px;
+
+    }
+
+    .stat-card{
+
+        padding:20px;
+
+    }
+
+}
