@@ -1295,3 +1295,34 @@ RESPONSIVE - TELÉFONOS PEQUEÑOS
     }
 
 }
+.radio-player{
+
+    background:#111;
+
+    border-radius:15px;
+
+    padding:20px;
+
+    margin-top:25px;
+
+    border:2px solid #ff2b2b;
+
+    text-align:center;
+
+    box-shadow:0 0 20px rgba(255,0,0,.3);
+
+}
+
+.radio-player h3{
+
+    color:#fff;
+
+    margin-bottom:15px;
+
+}
+
+.radio-player audio{
+
+    width:100%;
+
+}
